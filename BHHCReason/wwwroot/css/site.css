@@ -35,3 +35,27 @@ body {
         display: none;
     }
 }
+
+.about-heading {
+  color: #005695;
+}
+
+.about-content {
+  font-family: sans-serif;
+  font-size: 20px;
+  color: #5F6062;
+  line-height: 33px;
+  margin-bottom: 65px;
+}
+
+.col-org {
+  color: #A26A00
+}
+
+.width-auto {
+  width: auto;
+}
+
+
+
+

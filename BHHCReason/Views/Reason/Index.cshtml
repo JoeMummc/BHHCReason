@@ -1,0 +1,30 @@
+﻿@model ReasonDisplayViewModel
+
+@{
+  ViewData["Title"] = "Reasons";
+}
+
+<h2>Reasons To Work For BHHC</h2>
+<h4>Please enter at least 3 reasons</h4>
+
+<a asp-action="Add" class="btn btn-primary">Add Reason</a>
+
+<h3>User: @Model.UserName</h3>
+<br />
+<table class="table table-condensed table-bordered">
+  @foreach (var reason in Model.Reasons)
+  {
+    <tr>
+      <td>
+        <a asp-action="Edit" asp-route-id="@reason.Id">Edit</a> |
+        <a asp-action="Delete" asp-route-id="@reason.Id">Delete</a>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        @Html.DisplayFor(r => reason.Text) <br /><br />
+      </td>
+    </tr>
+  }
+</table>
+
