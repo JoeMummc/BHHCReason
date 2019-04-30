@@ -61,7 +61,7 @@ namespace BHHCReason
       app.UseHttpsRedirection();
 
       app.UseCookiePolicy();
-
+      app.UseStaticFiles();
       app.UseAuthentication();
 
       app.UseMvc(routes =>
